@@ -1,11 +1,10 @@
-import { Box, Button, css, TextField, Typography } from "@mui/material";
+import { Box, Button, TextField, Typography } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-
 interface LoginForm {
     username: string;
-    password: string;
+    password: string
 }
 
 interface Props {
