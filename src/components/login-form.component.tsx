@@ -22,7 +22,7 @@ export const LoginForm: React.FC<Props> = (props) => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        if (loginForm.username === "admin" && loginForm.password === "test") {
+        if (loginForm.username.toLowerCase() === "admin" && loginForm.password === "test") {
             navigate("/list");
         } else {
             setError(true)
