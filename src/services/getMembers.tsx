@@ -7,7 +7,7 @@ import { API } from "./API";
  **/
 
 export const getMembers = (org) =>
-    new Promise<{ Members: IMembers[] }>((resolve, reject) => {
+    new Promise<IMembers[]>((resolve, reject) => {
         API()
             .get(`orgs/${org}/members`)
             .then((res) => {
